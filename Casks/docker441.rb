@@ -23,13 +23,7 @@ cask "docker441" do
   end
 
   auto_updates true
-  conflicts_with cask:    "rancher",
-                 formula: %w[
-                   docker
-                   docker-completion
-                   docker-compose
-                   docker-credential-helper-ecr
-                 ]
+  conflicts_with cask:    "rancher"
   depends_on macos: ">= :monterey"
 
   app "Docker.app"
